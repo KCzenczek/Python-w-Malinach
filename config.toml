@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://example.org/"
+baseurl = "https://kczenczek.github.io/Python-w-Malinach/"
 publishDir = "docs"
 themesDir = "themes"
 languageCode = "en-us"
