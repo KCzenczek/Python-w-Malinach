@@ -1,5 +1,6 @@
 # Site settings
 baseurl = "https://example.org/"
+publishDir = "docs"
 themesDir = "themes"
 languageCode = "en-us"
 title = "Python w Malinach"
