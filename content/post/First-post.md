@@ -13,5 +13,8 @@ And below should be photo of a cat.
 Just for test
 ![RPI](/img/rpi-test.png)
 
+Connection
+![connection](/img/connection_base.png)
+
 Cotton candy bear claw I love tiramisu powder cupcake carrot cake. Chupa chups macaroon I love apple pie cotton candy jelly-o. Caramels bonbon caramels pudding caramels danish lollipop lemon drops.
 Sugar plum jujubes gingerbread pastry chocolate bar cotton candy. Ice cream candy croissant jelly liquorice liquorice I love tootsie roll tootsie roll. Chupa chups carrot cake I love jelly beans pie lollipop ice cream.
