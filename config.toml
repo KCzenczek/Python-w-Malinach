@@ -33,7 +33,7 @@ disqusShortname = ""
 	olderPosts = ""
 	newerPosts = ""
 	readMore = ""
-	copyright = ""
+	copyright = "Powered by [Hugo](//gohugo.io). Theme by [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme)."
 	# Sharing options and author information in posts
 	aboutAuthor = "I'm an blogger."
 	tweet = ""
