@@ -9,6 +9,7 @@ theme = "cactus"
 googleAnalytics = ""
 # Disable comments by leaving disqusShortname empty
 disqusShortname = ""
+canonifyURLs = true
 
 [params]
 	name = "Kinga"
