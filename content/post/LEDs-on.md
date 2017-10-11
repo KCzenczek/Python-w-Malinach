@@ -20,7 +20,7 @@ Poza naszym komputerkiem, dobrze mieć:
 
 - 1 x płytka stykowa - moja wygląda prawie dokładnie jak ta, którą namalowałam w schemacie. Prawie, ponieważ moja jest przeźroczysta, co doprowadza mnie do oczopląsu podczas podłączania. Serio! Zdecydowanie odradzam używanie przeźroczystej płytki stykowej.
 - 2 x dioda LED - nie powinnam pisać, że kolor nie ma znaczenia, gdyż ma. Chodzi o napięcie jakie odkłada się na diodzie. Wystarczy sprawdzić specyfikację diody, rzecz jasna jeśli producent dołączył. Jeśli nie mamy dostępu do tej informacji, bardzo bezpieczne okaże się użycie rezystora 470 Om, dla dowolnego koloru diody LED. 
-- 2 x rezystor - wspomniany powyżej 470 Om. Tak naprawdę dla tej diody wystarczy rezystor powyżej 50 Om. Zainteresowanym metodą doboru odpowiedniego rezystora polecam [Jak dobrać rezytor do diody](https://forbot.pl/blog/jak-dobrac-rezystor-do-diody-rozne-metody-zasilania-led-id14482)
+- 2 x rezystor - wspomniany powyżej 470 Om. Tak naprawdę dla tej diody wystarczy rezystor powyżej 50 Om. Zainteresowanym metodą doboru odpowiedniego rezystora polecam [Jak dobrać rezytor do diody?](https://forbot.pl/blog/jak-dobrac-rezystor-do-diody-rozne-metody-zasilania-led-id14482)
 - 3 x kabelek męsko-żeński
 
 Schemat podpięcia jest następujący:
@@ -43,23 +43,7 @@ Po uruchomieniu Malinki, wchodzimy do terminala, wpisujemy $ IDLE3, aby uruchom
 
 Tworzymy nowy plik, a w nim piszemy:
 
-
-import RPi.GPIO as GPIO
-import time
-
-
-GPIO.setmode(GPIO.BOARD)
-chan_list = [7, 11]
-GPIO.setup(chan_list, GPIO.OUT)
-
-for x in range(0, 10):
-    GPIO.output(chan_list, (GPIO.HIGH, GPIO.LOW))
-    time.sleep(.5)
-    GPIO.output(chan_list, (GPIO.LOW, GPIO.HIGH))
-    time.sleep(.5)
-
-GPIO.cleanup()
-
+[Link do kodu] (https://github.com/KCzenczek/RPi-code/blob/master/LED/LED_two_red.py)
 
 
 Jak 'odpalić' plik?
