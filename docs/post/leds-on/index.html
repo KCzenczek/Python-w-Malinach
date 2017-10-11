@@ -23,7 +23,8 @@
 
 <meta property="og:title" content="Niech stanie się Jasność" />
 <meta property="og:description" content="LED&rsquo;s On Zaczniemy od najważniejszego czyli komunikacji z Malinką. Jak sama nazwa wskazuje port GPIO czyli General Purpose Input Output umożliwia Malince komunikację na dwa sposoby.
-W moim tłumaczeniu: - input - czyli wszystko to co jest sczytywane/odbierane ze świata zewnętrznego przez Malinkę, inaczej dane które do niej &lsquo;wpadają&rsquo; np. rozmaite informacje z czujników czy wciskany w danym momencie przez nas guziki, najczęściej czerwone (i nie mam pojęcia dlaczego najczęściej w tym kolorze)." />
+W moim tłumaczeniu:
+ input - czyli wszystko to co jest sczytywane/odbierane ze świata zewnętrznego przez Malinkę, inaczej dane które do niej &lsquo;wpadają&rsquo; np. rozmaite informacje z czujników czy wciskany w danym momencie przez nas guziki, najczęściej czerwone (i nie mam pojęcia dlaczego najczęściej w tym kolorze)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kczenczek.github.io/Python-w-Malinach/post/leds-on/" />
 
@@ -46,11 +47,12 @@ W moim tłumaczeniu: - input - czyli wszystko to co jest sczytywane/odbierane ze
 
 <meta itemprop="name" content="Niech stanie się Jasność">
 <meta itemprop="description" content="LED&rsquo;s On Zaczniemy od najważniejszego czyli komunikacji z Malinką. Jak sama nazwa wskazuje port GPIO czyli General Purpose Input Output umożliwia Malince komunikację na dwa sposoby.
-W moim tłumaczeniu: - input - czyli wszystko to co jest sczytywane/odbierane ze świata zewnętrznego przez Malinkę, inaczej dane które do niej &lsquo;wpadają&rsquo; np. rozmaite informacje z czujników czy wciskany w danym momencie przez nas guziki, najczęściej czerwone (i nie mam pojęcia dlaczego najczęściej w tym kolorze).">
+W moim tłumaczeniu:
+ input - czyli wszystko to co jest sczytywane/odbierane ze świata zewnętrznego przez Malinkę, inaczej dane które do niej &lsquo;wpadają&rsquo; np. rozmaite informacje z czujników czy wciskany w danym momencie przez nas guziki, najczęściej czerwone (i nie mam pojęcia dlaczego najczęściej w tym kolorze).">
 
 
 <meta itemprop="dateModified" content="2017-10-11T18:17:54&#43;02:00" />
-<meta itemprop="wordCount" content="545">
+<meta itemprop="wordCount" content="538">
 
 
 
@@ -58,7 +60,8 @@ W moim tłumaczeniu: - input - czyli wszystko to co jest sczytywane/odbierane ze
 
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Niech stanie się Jasność"/>
 <meta name="twitter:description" content="LED&rsquo;s On Zaczniemy od najważniejszego czyli komunikacji z Malinką. Jak sama nazwa wskazuje port GPIO czyli General Purpose Input Output umożliwia Malince komunikację na dwa sposoby.
-W moim tłumaczeniu: - input - czyli wszystko to co jest sczytywane/odbierane ze świata zewnętrznego przez Malinkę, inaczej dane które do niej &lsquo;wpadają&rsquo; np. rozmaite informacje z czujników czy wciskany w danym momencie przez nas guziki, najczęściej czerwone (i nie mam pojęcia dlaczego najczęściej w tym kolorze)."/>
+W moim tłumaczeniu:
+ input - czyli wszystko to co jest sczytywane/odbierane ze świata zewnętrznego przez Malinkę, inaczej dane które do niej &lsquo;wpadają&rsquo; np. rozmaite informacje z czujników czy wciskany w danym momencie przez nas guziki, najczęściej czerwone (i nie mam pojęcia dlaczego najczęściej w tym kolorze)."/>
 
 
     </head>
@@ -97,23 +100,27 @@ W moim tłumaczeniu: - input - czyli wszystko to co jest sczytywane/odbierane ze
 
 <p>Zaczniemy od najważniejszego czyli komunikacji z Malinką. Jak sama nazwa wskazuje port GPIO czyli General Purpose Input Output umożliwia Malince komunikację na dwa sposoby.</p>
 
-<p>W moim tłumaczeniu:
-- input - czyli wszystko to co jest sczytywane/odbierane ze świata zewnętrznego przez Malinkę, inaczej dane które do niej &lsquo;wpadają&rsquo; np. rozmaite informacje z czujników czy wciskany w danym momencie przez nas guziki, najczęściej czerwone (i nie mam pojęcia dlaczego najczęściej w tym kolorze).
-- output - czyli to co chcemy aby &lsquo;wyszło&rsquo; poprzez Malinkę do świata zewnętrznego, chcemy aby coś zadziało się poprzez Malinkę, np. nagle coś zaświeciło, nagle coś pojechało do przodu lub w bok.</p>
+<p>W moim tłumaczeniu:</p>
+
+<ul>
+<li>input - czyli wszystko to co jest sczytywane/odbierane ze świata zewnętrznego przez Malinkę, inaczej dane które do niej &lsquo;wpadają&rsquo; np. rozmaite informacje z czujników czy wciskany w danym momencie przez nas guziki, najczęściej czerwone (i nie mam pojęcia dlaczego najczęściej w tym kolorze).</li>
+<li>output - czyli to co chcemy aby &lsquo;wyszło&rsquo; poprzez Malinkę do świata zewnętrznego, chcemy aby coś zadziało się poprzez Malinkę, np. nagle coś zaświeciło, nagle coś pojechało do przodu lub w bok.</li>
+</ul>
 
 <p>Tak więc klasyczne zapalanie diody LED będzie przykładem wykorzystania GPIO jako outputu.
    
-1. Czego potrzebuję?</p>
+Czego potrzebuję?</p>
 
-<p>Poza naszym komputerkiem, dobrze mieć:
-- 1 x płytka stykowa - moja wygląda prawie dokładnie jak ta, którą namalowałam w schemacie. Prawie, ponieważ moja jest przeźroczysta, co doprowadza mnie do oczopląsu podczas podłączania. Serio! Zdecydowanie odradzam używanie przeźroczystej płytki stykowej.
-- 2 x dioda LED - nie powinnam pisać, że kolor nie ma znaczenia, gdyż ma. Chodzi o napięcie jakie odkłada się na diodzie. Wystarczy sprawdzić specyfikację diody, rzecz jasna jeśli producent dołączył. Jeśli nie mamy dostępu do tej informacji, bardzo bezpieczne okaże się użycie rezystora 470 Om, dla dowolnego koloru diody LED. 
-- 2 x rezystor - wspomniany powyżej 470 Om. Tak naprawdę dla tej diody wystarczy rezystor powyżej 50 Om. Zainteresowanym metodą doboru odpowiedniego rezystora polecam <a href="https://forbot.pl/blog/jak-dobrac-rezystor-do-diody-rozne-metody-zasilania-led-id14482">Jak dobrać rezytor do diody</a>
-- 3 x kabelek męsko-żeński</p>
+<p>Poza naszym komputerkiem, dobrze mieć:</p>
 
-<ol>
-<li>Schemat podpięcia jest następujący:</li>
-</ol>
+<ul>
+<li>1 x płytka stykowa - moja wygląda prawie dokładnie jak ta, którą namalowałam w schemacie. Prawie, ponieważ moja jest przeźroczysta, co doprowadza mnie do oczopląsu podczas podłączania. Serio! Zdecydowanie odradzam używanie przeźroczystej płytki stykowej.</li>
+<li>2 x dioda LED - nie powinnam pisać, że kolor nie ma znaczenia, gdyż ma. Chodzi o napięcie jakie odkłada się na diodzie. Wystarczy sprawdzić specyfikację diody, rzecz jasna jeśli producent dołączył. Jeśli nie mamy dostępu do tej informacji, bardzo bezpieczne okaże się użycie rezystora 470 Om, dla dowolnego koloru diody LED. </li>
+<li>2 x rezystor - wspomniany powyżej 470 Om. Tak naprawdę dla tej diody wystarczy rezystor powyżej 50 Om. Zainteresowanym metodą doboru odpowiedniego rezystora polecam <a href="https://forbot.pl/blog/jak-dobrac-rezystor-do-diody-rozne-metody-zasilania-led-id14482">Jak dobrać rezytor do diody</a></li>
+<li>3 x kabelek męsko-żeński</li>
+</ul>
+
+<p>Schemat podpięcia jest następujący:</p>
 
 <p><img src="https://kczenczek.github.io/Python-w-Malinach/img/connection_base_two_red.png" alt="schemat" /></p>
 
@@ -127,9 +134,7 @@ W moim tłumaczeniu: - input - czyli wszystko to co jest sczytywane/odbierane ze
 
 <p>Ale jak widać niektóre GP są zielone inne różowe czy niebieskie. Otóż wszystkie GP poza kolorem zielonym mają jeszcze dodatkowe funkcje. Wychodzę z założenia, że lepiej nauczyć się używać w pierwszej kolejności tych GP, które mają jedno przeznaczenie jako INPUT/OUTPUT, czyli w tym przypadku oznaczone są kolorem zielonym. Jak widać jest ich sporo więc nie powinno braknąć. </p>
 
-<ol>
-<li>Trochę kodu</li>
-</ol>
+<p>Trochę kodu</p>
 
 <p>Po uruchomieniu Malinki, wchodzimy do terminala, wpisujemy $ IDLE3, aby uruchomić Pythona 3 (bez 3 uruchomimy, rzecz jasna wersję 2).</p>
 
@@ -150,9 +155,7 @@ GPIO.setup(chan_list, GPIO.OUT)</p>
 
 <p>GPIO.cleanup()</p>
 
-<ol>
-<li>Jak &lsquo;odpalić&rsquo; plik?</li>
-</ol>
+<p>Jak &lsquo;odpalić&rsquo; plik?</p>
 
 <p>Zapisujemy plik i odpalamy F5.
 Taaadaaa!!!</p>

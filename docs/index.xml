@@ -19,7 +19,8 @@
       
       <guid>https://kczenczek.github.io/Python-w-Malinach/post/leds-on/</guid>
       <description>LED&amp;rsquo;s On Zaczniemy od najważniejszego czyli komunikacji z Malinką. Jak sama nazwa wskazuje port GPIO czyli General Purpose Input Output umożliwia Malince komunikację na dwa sposoby.
-W moim tłumaczeniu: - input - czyli wszystko to co jest sczytywane/odbierane ze świata zewnętrznego przez Malinkę, inaczej dane które do niej &amp;lsquo;wpadają&amp;rsquo; np. rozmaite informacje z czujników czy wciskany w danym momencie przez nas guziki, najczęściej czerwone (i nie mam pojęcia dlaczego najczęściej w tym kolorze).</description>
+W moim tłumaczeniu:
+ input - czyli wszystko to co jest sczytywane/odbierane ze świata zewnętrznego przez Malinkę, inaczej dane które do niej &amp;lsquo;wpadają&amp;rsquo; np. rozmaite informacje z czujników czy wciskany w danym momencie przez nas guziki, najczęściej czerwone (i nie mam pojęcia dlaczego najczęściej w tym kolorze).</description>
     </item>
     
     <item>
