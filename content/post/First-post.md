@@ -51,15 +51,13 @@ Jeden adapter w zupełności wystarczy, nawet gdy się będzie miało wiele kart
 Generalnie, na stronie [Fundacji Raspberry] (https://www.raspberrypi.org/downloads/) znajdują się dwa systemy operacyjne. 
 
 Nie ma sensu tworzyć kolejnej szczegółowej odsłony 'instalacji krok po kroku', 
-dlatego polecam albo [oryginał] (https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
-
-albo wersję [pl] (http://malinowepi.pl/post/39744941523/instalacja-systemu)
+dlatego polecam albo [oryginał] (https://www.raspberrypi.org/documentation/installation/installing-images/README.md) albo wersję [pl] (http://malinowepi.pl/post/39744941523/instalacja-systemu)
 
 Zdradzając jak to wyglądało u mnie, w skrócie:
 
-1. Ściągnełam [Raspbiana] (https://www.raspberrypi.org/downloads/raspbian/)
-2. Potem ściągnełam i zainstalowałam [Etchera] (do zapisywania zdjęć na karcie SD) (https://etcher.io/) 
-2. Wsadziłam micro SD do adaptera, a to wszystko do laptopa
+1. Ściągnełam [Raspbiana] (https://www.raspberrypi.org/downloads/raspbian/).
+2. Potem ściągnełam i zainstalowałam [Etchera] (https://etcher.io/) (do zapisywania zdjęć na karcie SD). 
+2. Wsadziłam micro SD do adaptera, a to wszystko do laptopa.
 3. Odpaliłam Etchera i zgodnie z pojawiającymi się trzema komunikatami zrobiłam 'flasha' Raspbiana na micro SD.
 
 Koniec 
