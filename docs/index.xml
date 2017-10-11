@@ -13,12 +13,14 @@
     
     
     <item>
-      <title>First Post</title>
+      <title>Pierwszy post</title>
       <link>https://kczenczek.github.io/Python-w-Malinach/post/first-post/</link>
       <pubDate>Fri, 08 Sep 2017 20:02:43 +0200</pubDate>
       
       <guid>https://kczenczek.github.io/Python-w-Malinach/post/first-post/</guid>
-      <description>I love chocolate cake I love jelly-o. Cupcake ipsum dolor sit amet croissant lemon drops bear claw dragée. Pudding toffee lemon drops biscuit dessert pastry icing. I love toffee tootsie roll icing marzipan. Pie biscuit gummies I love jelly. Oat cake caramels I love candy canes I love carrot cake brownie. Bonbon apple pie apple pie toffee. Chocolate bar gummies cake macaroon gummies. Powder chocolate I love pastry pastry fruitcake I love marshmallow.</description>
+      <description>First thing first Chciałam rozpocząć od opisania prostego podpięcia diody LED, ale gdy zaczęłam wyliczać jakie elementy są do tego niezbędne, szybko uświadomiłam sobie, że dla takich osób jak ja, które naprawdę zaczynają od zera (czyli kliknięcia w guzik w sklepie internetowym z pierwszą Malinką w koszyku), ważne będzie porządne wprowadzenie, no i postanowiłam zrobić jeszcze jeden krok w tył.
+Tak więc:
+ Wybór Malinki i nie tylko  Tak jak wspomniałam, moją przygodę z Malinką zaczynam na Raspberry Pi Zero, ponieważ na dzień dobry nie potrzebuję dużej mocy.</description>
     </item>
     
   </channel>
