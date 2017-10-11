@@ -18,12 +18,12 @@ Czego potrzebuję?
 Poza naszym komputerkiem, dobrze mieć:
 - 1 x płytka stykowa - moja wygląda prawie dokładnie jak ta, którą namalowałam w schemacie. Prawie, ponieważ moja jest przeźroczysta, co doprowadza mnie do oczopląsu podczas podłączania. Serio! Zdecydowanie odradzam używanie przeźroczystej płytki stykowej.
 - 2 x dioda LED - nie powinnam pisać, że kolor nie ma znaczenia, gdyż ma. Chodzi o napięcie jakie odkłada się na diodzie. Wystarczy sprawdzić specyfikację diody, rzecz jasna jeśli producent dołączył. Jeśli nie mamy dostępu do tej informacji, bardzo bezpieczne okaże się użycie rezystora 470 Om, dla dowolnego koloru diody LED. 
-- 2 x rezystor - wspomniany powyżej 470 Om. Tak naprawdę dla tej diody wystarczy rezystor powyżej 50 Om. Zainteresowanym metodą doboru odpowiedniego rezystora polecam [Jak dobrać rezytor do diody] (https://forbot.pl/blog/jak-dobrac-rezystor-do-diody-rozne-metody-zasilania-led-id14482)
+- 2 x rezystor - wspomniany powyżej 470 Om. Tak naprawdę dla tej diody wystarczy rezystor powyżej 50 Om. Zainteresowanym metodą doboru odpowiedniego rezystora polecam [Jak dobrać rezytor do diody](https://forbot.pl/blog/jak-dobrac-rezystor-do-diody-rozne-metody-zasilania-led-id14482)
 - 3 x kabelek męsko-żeński
 
 Schemat podpięcia jest następujący:
 
-[!schemat](/img/connection_base_two_red.png)
+[! schemat](/img/connection_base_two_red.png)
 
 PIN 6, czyli uziemienie (GND) czarnym kabelkiem (tu kolor kabli zupełnie nie ma znaczenia, kwestia czytelności schematu) wpinam w drugi rząd (czyli "-"). Co do "+" i "-" są to rzędy, których wejścia są połączone w PIONIE, co w naszym przypadku oznacza, że GND mamy teraz w całym drugim rzędzie.
 
