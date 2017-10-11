@@ -14,7 +14,7 @@ canonifyURLs = true
 [params]
 	name = "Kinga"
 	description = "This is a blog about RPi projects"
-	bio = "Bonbon cake donut. I love jelly-o jelly I love lollipop. Chupa chups cotton candy I love icing pie sweet muffin I love."
+	bio = "Początkująca Pythonistka oraz największa fanka najmniejszej Maliny."
 	# Enter optionally your twitter account
 	twitter = "Your Twitter account"
 	enableRSS = true
