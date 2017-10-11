@@ -23,7 +23,7 @@ Poza naszym komputerkiem, dobrze mieć:
 
 Schemat podpięcia jest następujący:
 
-(/img/connection_base_two_red.png)
+[!schemat](/img/connection_base_two_red.png)
 
 PIN 6, czyli uziemienie (GND) czarnym kabelkiem (tu kolor kabli zupełnie nie ma znaczenia, kwestia czytelności schematu) wpinam w drugi rząd (czyli "-"). Co do "+" i "-" są to rzędy, których wejścia są połączone w PIONIE, co w naszym przypadku oznacza, że GND mamy teraz w całym drugim rzędzie.
 
@@ -41,22 +41,6 @@ Po uruchomieniu Malinki, wchodzimy do terminala, wpisujemy $ IDLE3, aby uruchom
 
 Tworzymy nowy plik, a w nim piszemy:
 
-
-import RPi.GPIO as GPIO 
-import time
-
-
-GPIO.setmode(GPIO.BOARD)
-chan_list = [7, 11]
-GPIO.setup(chan_list, GPIO.OUT)
-
-for x in range(0, 10):
-    GPIO.output(chan_list, (GPIO.HIGH, GPIO.LOW))
-    time.sleep(.5)
-    GPIO.output(chan_list, (GPIO.LOW, GPIO.HIGH))
-    time.sleep(.5)
-
-GPIO.cleanup()
 
 
 Jak 'odpalić' plik?

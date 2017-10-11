@@ -50,7 +50,7 @@ W moim tłumaczeniu: - input - czyli wszystko to co jest sczytywane/odbierane ze
 
 
 <meta itemprop="dateModified" content="2017-10-11T18:17:54&#43;02:00" />
-<meta itemprop="wordCount" content="546">
+<meta itemprop="wordCount" content="519">
 
 
 
@@ -113,7 +113,7 @@ Czego potrzebuję?</p>
 
 <p>Schemat podpięcia jest następujący:</p>
 
-<p>(/img/connection_base_two_red.png)</p>
+<p><a href="https://kczenczek.github.io/Python-w-Malinach/img/connection_base_two_red.png">!schemat</a></p>
 
 <p>PIN 6, czyli uziemienie (GND) czarnym kabelkiem (tu kolor kabli zupełnie nie ma znaczenia, kwestia czytelności schematu) wpinam w drugi rząd (czyli &ldquo;-&rdquo;). Co do &ldquo;+&rdquo; i &ldquo;-&rdquo; są to rzędy, których wejścia są połączone w PIONIE, co w naszym przypadku oznacza, że GND mamy teraz w całym drugim rzędzie.</p>
 
@@ -130,21 +130,6 @@ Czego potrzebuję?</p>
 <p>Po uruchomieniu Malinki, wchodzimy do terminala, wpisujemy $ IDLE3, aby uruchomić Pythona 3 (bez 3 uruchomimy, rzecz jasna wersję 2).</p>
 
 <p>Tworzymy nowy plik, a w nim piszemy:</p>
-
-<p>import RPi.GPIO as GPIO
-import time</p>
-
-<p>GPIO.setmode(GPIO.BOARD)
-chan_list = [7, 11]
-GPIO.setup(chan_list, GPIO.OUT)</p>
-
-<p>for x in range(0, 10):
-    GPIO.output(chan_list, (GPIO.HIGH, GPIO.LOW))
-    time.sleep(.5)
-    GPIO.output(chan_list, (GPIO.LOW, GPIO.HIGH))
-    time.sleep(.5)</p>
-
-<p>GPIO.cleanup()</p>
 
 <p>Jak &lsquo;odpalić&rsquo; plik?</p>
 
