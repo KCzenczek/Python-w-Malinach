@@ -31,7 +31,7 @@ Przy zakupie kolejnej Malinki, dokładnie Raspberry Pi Zero W, jak to było w mo
 
 Mój podstawowy zestaw do pracy:
 
-- Malinka z Raspberry Pi Zero All in One stąd https://botland.com.pl/moduly-i-zestawy-raspberry-pi-zero/8755-zestaw-raspberry-pi-zero-all-in-one.html
+- Malinka z [Raspberry Pi Zero All in One] (https://botland.com.pl/moduly-i-zestawy-raspberry-pi-zero/8755-zestaw-raspberry-pi-zero-all-in-one.html)
 - Klawiatura z touchpadem - iPazzPort 
 - Ekran dotykowy rezystancyjny LCD TFT 5'' 
 - HUB Rozdzielacz HOST OTG Micro 3 x USB
@@ -48,17 +48,17 @@ Jeden adapter w zupełności wystarczy, nawet gdy się będzie miało wiele kart
 
 3. System operacyjny
 
-Generalnie, na stronie Fundacji Raspberry https://www.raspberrypi.org/downloads/ znajdują się dwa systemy operacyjne. 
+Generalnie, na stronie [Fundacji Raspberry] (https://www.raspberrypi.org/downloads/) znajdują się dwa systemy operacyjne. 
 
 Nie ma sensu tworzyć kolejnej szczegółowej odsłony 'instalacji krok po kroku', 
-dlatego polecam albo oryginał https://www.raspberrypi.org/documentation/installation/installing-images/README.md
+dlatego polecam albo [oryginał] (https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
 
-albo wersję pl http://malinowepi.pl/post/39744941523/instalacja-systemu
+albo wersję [pl] (http://malinowepi.pl/post/39744941523/instalacja-systemu)
 
 Zdradzając jak to wyglądało u mnie, w skrócie:
 
-1. Ściągnełam Raspbiana - https://www.raspberrypi.org/downloads/raspbian/
-2. Potem ściągnełam i zainstalowałam Etchera (do zapisywania zdjęć na karcie SD) - https://etcher.io/ 
+1. Ściągnełam [Raspbiana] (https://www.raspberrypi.org/downloads/raspbian/)
+2. Potem ściągnełam i zainstalowałam [Etchera] (do zapisywania zdjęć na karcie SD) (https://etcher.io/) 
 2. Wsadziłam micro SD do adaptera, a to wszystko do laptopa
 3. Odpaliłam Etchera i zgodnie z pojawiającymi się trzema komunikatami zrobiłam 'flasha' Raspbiana na micro SD.
 
@@ -73,7 +73,7 @@ Przede wszystkim zwróćcie uwagę, że Malinki nie mają On/Off, czyli włącze
 
 Prąd płynie działa, nie płynie nie działa :)
 
-W razie problemów polecam [!Problemy z uruchomieniem RPi] (http://blog.r-pi.pl/2013/11/problemy-uruchomieniem-rpi/)
+W razie problemów polecam [Problemy z uruchomieniem RPi] (http://blog.r-pi.pl/2013/11/problemy-uruchomieniem-rpi/)
 
 Piszę o tym wszystkim bo jak się okazało u mnie problem był nie z pierwszym, ale z drugim uruchomieniem !
 
