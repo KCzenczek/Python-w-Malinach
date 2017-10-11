@@ -50,7 +50,7 @@ W moim tłumaczeniu: - input - czyli wszystko to co jest sczytywane/odbierane ze
 
 
 <meta itemprop="dateModified" content="2017-10-11T18:17:54&#43;02:00" />
-<meta itemprop="wordCount" content="519">
+<meta itemprop="wordCount" content="545">
 
 
 
@@ -103,7 +103,7 @@ W moim tłumaczeniu: - input - czyli wszystko to co jest sczytywane/odbierane ze
 
 <p>Tak więc klasyczne zapalanie diody LED będzie przykładem wykorzystania GPIO jako outputu.
    
-Czego potrzebuję?</p>
+1. Czego potrzebuję?</p>
 
 <p>Poza naszym komputerkiem, dobrze mieć:
 - 1 x płytka stykowa - moja wygląda prawie dokładnie jak ta, którą namalowałam w schemacie. Prawie, ponieważ moja jest przeźroczysta, co doprowadza mnie do oczopląsu podczas podłączania. Serio! Zdecydowanie odradzam używanie przeźroczystej płytki stykowej.
@@ -111,9 +111,11 @@ Czego potrzebuję?</p>
 - 2 x rezystor - wspomniany powyżej 470 Om. Tak naprawdę dla tej diody wystarczy rezystor powyżej 50 Om. Zainteresowanym metodą doboru odpowiedniego rezystora polecam <a href="https://forbot.pl/blog/jak-dobrac-rezystor-do-diody-rozne-metody-zasilania-led-id14482">Jak dobrać rezytor do diody</a>
 - 3 x kabelek męsko-żeński</p>
 
-<p>Schemat podpięcia jest następujący:</p>
+<ol>
+<li>Schemat podpięcia jest następujący:</li>
+</ol>
 
-<p><a href="https://kczenczek.github.io/Python-w-Malinach/img/connection_base_two_red.png">! schemat</a></p>
+<p><img src="https://kczenczek.github.io/Python-w-Malinach/img/connection_base_two_red.png" alt="schemat" /></p>
 
 <p>PIN 6, czyli uziemienie (GND) czarnym kabelkiem (tu kolor kabli zupełnie nie ma znaczenia, kwestia czytelności schematu) wpinam w drugi rząd (czyli &ldquo;-&rdquo;). Co do &ldquo;+&rdquo; i &ldquo;-&rdquo; są to rzędy, których wejścia są połączone w PIONIE, co w naszym przypadku oznacza, że GND mamy teraz w całym drugim rzędzie.</p>
 
@@ -125,13 +127,32 @@ Czego potrzebuję?</p>
 
 <p>Ale jak widać niektóre GP są zielone inne różowe czy niebieskie. Otóż wszystkie GP poza kolorem zielonym mają jeszcze dodatkowe funkcje. Wychodzę z założenia, że lepiej nauczyć się używać w pierwszej kolejności tych GP, które mają jedno przeznaczenie jako INPUT/OUTPUT, czyli w tym przypadku oznaczone są kolorem zielonym. Jak widać jest ich sporo więc nie powinno braknąć. </p>
 
-<p>Trochę kodu</p>
+<ol>
+<li>Trochę kodu</li>
+</ol>
 
 <p>Po uruchomieniu Malinki, wchodzimy do terminala, wpisujemy $ IDLE3, aby uruchomić Pythona 3 (bez 3 uruchomimy, rzecz jasna wersję 2).</p>
 
 <p>Tworzymy nowy plik, a w nim piszemy:</p>
 
-<p>Jak &lsquo;odpalić&rsquo; plik?</p>
+<p>import RPi.GPIO as GPIO
+import time</p>
+
+<p>GPIO.setmode(GPIO.BOARD)
+chan_list = [7, 11]
+GPIO.setup(chan_list, GPIO.OUT)</p>
+
+<p>for x in range(0, 10):
+    GPIO.output(chan_list, (GPIO.HIGH, GPIO.LOW))
+    time.sleep(.5)
+    GPIO.output(chan_list, (GPIO.LOW, GPIO.HIGH))
+    time.sleep(.5)</p>
+
+<p>GPIO.cleanup()</p>
+
+<ol>
+<li>Jak &lsquo;odpalić&rsquo; plik?</li>
+</ol>
 
 <p>Zapisujemy plik i odpalamy F5.
 Taaadaaa!!!</p>

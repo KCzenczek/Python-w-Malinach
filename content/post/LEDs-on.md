@@ -13,7 +13,7 @@ W moim tłumaczeniu:
 
 Tak więc klasyczne zapalanie diody LED będzie przykładem wykorzystania GPIO jako outputu.
    
-Czego potrzebuję?
+1. Czego potrzebuję?
 
 Poza naszym komputerkiem, dobrze mieć:
 - 1 x płytka stykowa - moja wygląda prawie dokładnie jak ta, którą namalowałam w schemacie. Prawie, ponieważ moja jest przeźroczysta, co doprowadza mnie do oczopląsu podczas podłączania. Serio! Zdecydowanie odradzam używanie przeźroczystej płytki stykowej.
@@ -21,9 +21,9 @@ Poza naszym komputerkiem, dobrze mieć:
 - 2 x rezystor - wspomniany powyżej 470 Om. Tak naprawdę dla tej diody wystarczy rezystor powyżej 50 Om. Zainteresowanym metodą doboru odpowiedniego rezystora polecam [Jak dobrać rezytor do diody](https://forbot.pl/blog/jak-dobrac-rezystor-do-diody-rozne-metody-zasilania-led-id14482)
 - 3 x kabelek męsko-żeński
 
-Schemat podpięcia jest następujący:
+2. Schemat podpięcia jest następujący:
 
-[! schemat](/img/connection_base_two_red.png)
+![schemat](/img/connection_base_two_red.png)
 
 PIN 6, czyli uziemienie (GND) czarnym kabelkiem (tu kolor kabli zupełnie nie ma znaczenia, kwestia czytelności schematu) wpinam w drugi rząd (czyli "-"). Co do "+" i "-" są to rzędy, których wejścia są połączone w PIONIE, co w naszym przypadku oznacza, że GND mamy teraz w całym drugim rzędzie.
 
@@ -35,15 +35,30 @@ Co do zasady mamy do dyspozycji wszystkie PIN-y oznaczone GP, co jest skrótem o
 
 Ale jak widać niektóre GP są zielone inne różowe czy niebieskie. Otóż wszystkie GP poza kolorem zielonym mają jeszcze dodatkowe funkcje. Wychodzę z założenia, że lepiej nauczyć się używać w pierwszej kolejności tych GP, które mają jedno przeznaczenie jako INPUT/OUTPUT, czyli w tym przypadku oznaczone są kolorem zielonym. Jak widać jest ich sporo więc nie powinno braknąć. 
 
-Trochę kodu
+3. Trochę kodu
 
 Po uruchomieniu Malinki, wchodzimy do terminala, wpisujemy $ IDLE3, aby uruchomić Pythona 3 (bez 3 uruchomimy, rzecz jasna wersję 2).
 
 Tworzymy nowy plik, a w nim piszemy:
 
+import RPi.GPIO as GPIO
+import time
 
 
-Jak 'odpalić' plik?
+GPIO.setmode(GPIO.BOARD)
+chan_list = [7, 11]
+GPIO.setup(chan_list, GPIO.OUT)
+
+for x in range(0, 10):
+    GPIO.output(chan_list, (GPIO.HIGH, GPIO.LOW))
+    time.sleep(.5)
+    GPIO.output(chan_list, (GPIO.LOW, GPIO.HIGH))
+    time.sleep(.5)
+
+GPIO.cleanup()
+
+
+4. Jak 'odpalić' plik?
 
 Zapisujemy plik i odpalamy F5.
 Taaadaaa!!!
