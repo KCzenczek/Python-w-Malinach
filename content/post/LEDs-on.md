@@ -1,7 +1,6 @@
 ---
 title: "Niech stanie się Jasność"
-date: 2017-10-11T17:05:21+02:00
-draft: false
+date: 2017-10-11T18:17:54+02:00
 ---
 
 # LED's On

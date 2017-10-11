@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](//gohugo.io). Theme by [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme).</copyright>
-    <lastBuildDate>Wed, 11 Oct 2017 17:05:21 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 11 Oct 2017 18:17:54 +0200</lastBuildDate>
     
 	<atom:link href="https://kczenczek.github.io/Python-w-Malinach/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Niech stanie się Jasność</title>
       <link>https://kczenczek.github.io/Python-w-Malinach/post/leds-on/</link>
-      <pubDate>Wed, 11 Oct 2017 17:05:21 +0200</pubDate>
+      <pubDate>Wed, 11 Oct 2017 18:17:54 +0200</pubDate>
       
       <guid>https://kczenczek.github.io/Python-w-Malinach/post/leds-on/</guid>
       <description>LED&amp;rsquo;s On Zaczniemy od najważniejszego czyli komunikacji z Malinką. Jak sama nazwa wskazuje port GPIO czyli General Purpose Input Output umożliwia Malince komunikację na dwa sposoby.
