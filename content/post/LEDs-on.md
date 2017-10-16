@@ -39,7 +39,7 @@ Ale jak widać niektóre GP są zielone inne różowe czy niebieskie. Otóż wsz
 
 Trochę kodu
 
-Po uruchomieniu Malinki, wchodzimy do terminala, wpisujemy $ IDLE3, aby uruchomić Pythona 3 (bez 3 uruchomimy, rzecz jasna wersję 2).
+Po uruchomieniu Malinki, wchodzimy do terminala, wpisujemy $ sudo idle3, aby uruchomić Pythona 3 (bez 3 uruchomimy, rzecz jasna wersję 2).
 
 Tworzymy nowy plik, a w nim piszemy:
 
