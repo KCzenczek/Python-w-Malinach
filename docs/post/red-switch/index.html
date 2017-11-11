@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Kinga">
+<meta name="description" content="This is a blog about RPi projects">
+<meta name="generator" content="Hugo 0.26" />
+<title>Red Switch</title>
+<link rel="shortcut icon" href="https://kczenczek.github.io/Python-w-Malinach/images/favicon.ico">
+<link rel="stylesheet" href="https://kczenczek.github.io/Python-w-Malinach/css/style.css">
+<link rel="stylesheet" href="https://kczenczek.github.io/Python-w-Malinach/css/highlight.css">
+
+
+
+<link rel="stylesheet" href="https://kczenczek.github.io/Python-w-Malinach/css/monosocialiconsfont.css">
+
+
+
+<link href="https://kczenczek.github.io/Python-w-Malinach/index.xml" rel="alternate" type="application/rss+xml" title="Python w Malinach" />
+
+
+<meta property="og:title" content="Red Switch" />
+<meta property="og:description" content="Lord of the Red switch Ostatnio omówiłam i przetestowałam sposób komunikowanie się Malinką za pomocą GPIO output, poprzez zaprogramowaną przez nas sekwencję zapalania się i gaśnięcia dwóch diod LED, rzecz jasna czerwonych ;)
+Tym razem spróbuję wywołać zdarzenie w naszym, zewnętrznym świecie i zobaczymy jak na to zareaguje Malinka. Podepnę nic innego jak zwykły przełącznik chwilowy ON-OFF, koloru&hellip; czerwonego :)
+Czego potrzebuję?
+ 1 x płytka stykowa 1 x przełącznik chwilowy ON-OFF 2 x rezystor - jeden rezystor 10k Om oraz drugi wystarczy 1k Om." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kczenczek.github.io/Python-w-Malinach/post/red-switch/" />
+
+
+
+<meta property="article:published_time" content="2017-11-11T14:49:17&#43;01:00"/>
+<meta property="article:modified_time" content="2017-11-11T14:49:17&#43;01:00"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Red Switch">
+<meta itemprop="description" content="Lord of the Red switch Ostatnio omówiłam i przetestowałam sposób komunikowanie się Malinką za pomocą GPIO output, poprzez zaprogramowaną przez nas sekwencję zapalania się i gaśnięcia dwóch diod LED, rzecz jasna czerwonych ;)
+Tym razem spróbuję wywołać zdarzenie w naszym, zewnętrznym świecie i zobaczymy jak na to zareaguje Malinka. Podepnę nic innego jak zwykły przełącznik chwilowy ON-OFF, koloru&hellip; czerwonego :)
+Czego potrzebuję?
+ 1 x płytka stykowa 1 x przełącznik chwilowy ON-OFF 2 x rezystor - jeden rezystor 10k Om oraz drugi wystarczy 1k Om.">
+
+
+<meta itemprop="dateModified" content="2017-11-11T14:49:17&#43;01:00" />
+<meta itemprop="wordCount" content="620">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Red Switch"/>
+<meta name="twitter:description" content="Lord of the Red switch Ostatnio omówiłam i przetestowałam sposób komunikowanie się Malinką za pomocą GPIO output, poprzez zaprogramowaną przez nas sekwencję zapalania się i gaśnięcia dwóch diod LED, rzecz jasna czerwonych ;)
+Tym razem spróbuję wywołać zdarzenie w naszym, zewnętrznym świecie i zobaczymy jak na to zareaguje Malinka. Podepnę nic innego jak zwykły przełącznik chwilowy ON-OFF, koloru&hellip; czerwonego :)
+Czego potrzebuję?
+ 1 x płytka stykowa 1 x przełącznik chwilowy ON-OFF 2 x rezystor - jeden rezystor 10k Om oraz drugi wystarczy 1k Om."/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='https://kczenczek.github.io/Python-w-Malinach/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+ 		<a href='https://kczenczek.github.io/Python-w-Malinach/about/'>About</a>
+  	
+
+	
+		<a class="cta" href="https://kczenczek.github.io/Python-w-Malinach/index.xml">Subscribe</a>
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>Red Switch</h1>
+        <h2 class="subtitle"></h2>
+        <h2 class="headline">
+        November 11, 2017
+        <br>
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        
+
+<h1 id="lord-of-the-red-switch">Lord of the Red switch</h1>
+
+<p>Ostatnio omówiłam i przetestowałam sposób komunikowanie się Malinką za pomocą GPIO output, poprzez zaprogramowaną przez nas sekwencję zapalania się i gaśnięcia dwóch diod LED, rzecz jasna czerwonych ;)</p>
+
+<p>Tym razem spróbuję wywołać zdarzenie w naszym, zewnętrznym świecie i zobaczymy jak na to zareaguje Malinka. Podepnę nic innego jak zwykły przełącznik chwilowy ON-OFF, koloru&hellip; czerwonego :)</p>
+
+<p>Czego potrzebuję?</p>
+
+<ul>
+<li>1 x płytka stykowa</li>
+<li>1 x przełącznik chwilowy ON-OFF</li>
+<li>2 x rezystor - jeden rezystor 10k Om oraz drugi wystarczy 1k Om. (Aczkolwiek, w moich zasobach był jedynie 1,2k Om. Też zadziałał, później wyjaśnię dlaczego i jak)</li>
+<li>3 x kabelek męsko-żeński</li>
+</ul>
+
+<p>Schemat podpięcia jest następujący:</p>
+
+<p><img src="https://kczenczek.github.io/Python-w-Malinach/img/connection_switch.png" alt="schemat" /></p>
+
+<p>Zaczynamy od PIN 16 czyli zwykłego zielonego GPIO 23 (w skrócie GP23), który łączymy niebieskim kabelkiem z płytką stykową w a7. Teraz uwaga pierwszy rezystor :) Rzecz jasna z punktu widzenia poprawności budowanego obwodu nie jest on konieczny, a zatem jaką on ma pełnić funkcję? Otóż instalujemy go jako rodzaj zabezpieczenia. W momencie, gdy w naszym kodzie zamiast ustawić GPIO.setup na GPIO.IN, w wyniku choćby jakiegoś rozkojarzenia, ustawimy na GPIO.OUT to wcześniejszy montaż rezystora uchroni PIN a nawet całą Malinkę przed niechybnym uszkodzeniem.
+Tak więc jedną nóżkę rezystora 1k Om wpinamy w c7, drugą w c4.
+Wracając do wiersza 7 wpinamy w dowolne miejsce np. d7 jedną nóżkę drugiego rezystora 10k Om, tzw. &lsquo;rezystora obniżającego&rsquo; (za chwilkę wyjaśnię), a drugą w nowy wiersz np. d11. W tym samym wierszu np. w a11 czarnym kabelkiem łączymy z PIN 25 czyli GND.
+PIN 1, czyli źródło zasilania 3,3V wpinamy zielonym kabelkiem w a1. Następnie w tym samym wierszu wpinamy np. e1 jedną nóżkę przełącznika ON-OFF, a drugą wpinamy w wiersz 4 np. w e4. W ten sposób wróciliśmy do wiersza, w którym podpięta jest druga nóżka &lsquo;małego rezystora&rsquo;. Obwód zamknięty.
+Teraz krótkie wyjaśnienie, o co chodzi z rezystorem obniżającym - otóż PIN 16 w powyższym układzie, znajduje się w stanie niskim z powodu podłączenia właśnie tego rezystora do GND. Gdybyśmy rezystor 10k Om podpięli do PIN 1 czyli 3,3V a przełącznik chwilowy ON-OFF do GND, wówczas PIN 16 znajdowałby się w stanie wysokim a rezystor 10k nazwany by został rezystorem podciągającym, z powodu podciągania do źródła zasilania 3,3V. Wówczas PIN znajdowałby się w stanie wysokim, a po naciśnięciu przełącznika przeszedłby do stanu niskiego.</p>
+
+<p>Wracając jednak do naszego schematu z rezystorem obniżającym wygląda to tak, w momencie &lsquo;nie-naciśnięcia&rsquo; przycisku obwód jest uziemiony, w momencie naciśnięcia, przechodzi w stan wysoki (zaczyna płynąć prąd).
+O tej właśnie zmianie (tzn. o przyciśnięciu guzika) informujemy Malinkę za pomocą PIN 16, a programem sterujemy co wówczas ma się zadziać.</p>
+
+<p>Trochę kodu</p>
+
+<p><a href="https://github.com/KCzenczek/RPi-code/blob/master/Sensors_and_switches/switch.py">Link do kodu</a></p>
+
+<p>Plik uruchamiam analogicznie jak w poprzednim poście. I taadaa! Działa!</p>
+
+<p>Na ekranie mamy wyświetlajęcy się pierwszy komunikat. Po wciśnięciu guzika, komunikat zmienia się na drugi. Ile razy możemy wcisnąć guzik? Tyle razy na ile mamy ochotę :)
+Ponieważ zastosowaliśmy pętlę while True bez ograniczenia, kod będzie działał dopóki nie włączymy Ctrl + C.</p>
+
+<p>Dla zaciekawionych:
+No dobrze był stan niski oraz stan wysoki. A czy może być &lsquo;nijaki&rsquo;? Otóż tak :) Z tym, że nazywa się troszkę inaczej. W ang. jest na to określenie &lsquo;floating&rsquo;, po polsku możemy opisać ten stan jako PIN niepodpięty, czyli nie możemy jednoznacznie określić jego logicznej wartości 0 czy 1. Chociaż nie polecam takich zabaw, to żeby osiągnąć ‘floating’ trzeba podpiąć PIN 16 - przełącznik ON-OFF - 3.3V, czyli bez GND.
+Podczas przygotowania tego materiału przypadkiem udało mi się osiągnąć, ten stan gdyż mając wszystko podpięte zgodnie z naszym schematem (co ważne miałam podpięte rezystory!!!) nie zauważyłam, że PIN GND wysunął mi się z Malinki - łobuz wyskoczył z gniazda. A co na to Python? Szalał pokazując na zmianę komunikaty z printów, bez mojego współudziału w postaci naciskania guzika, oczywiście czerwonego… 😊.</p>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <a href="https://twitter.com/Your%20Twitter%20account">
+    <img class="avatar" src="https://kczenczek.github.io/Python-w-Malinach/images/avatar.png">
+    <div>
+        <span class="dark">Kinga</span>
+        <span>I&#39;m a Python-padawan.</span>
+    </div>
+    </a>
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fkczenczek.github.io%2fPython-w-Malinach%2fpost%2fred-switch%2f - Red%20Switch by @Your%20Twitter%20account"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="https://kczenczek.github.io/Python-w-Malinach/post/leds-on/">Niech stanie się Jasność<aside class="dates">Oct 11 2017</aside></a>
+        </li>
+    
+        <li>
+            <a href="https://kczenczek.github.io/Python-w-Malinach/post/first-post/">Pierwszy post<aside class="dates">Sep 8 2017</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.github.com/">
+        circlegithub
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="https://github.com/digitalcraftsman/hugo-cactus-theme">Cactus</a>.
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://kczenczek.github.io/Python-w-Malinach/js/main.js"></script>
+<script src="https://kczenczek.github.io/Python-w-Malinach/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>

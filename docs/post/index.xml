@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](//gohugo.io). Theme by [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme).</copyright>
-    <lastBuildDate>Wed, 11 Oct 2017 18:17:54 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 11 Nov 2017 14:49:17 +0100</lastBuildDate>
     
 	<atom:link href="https://kczenczek.github.io/Python-w-Malinach/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Red Switch</title>
+      <link>https://kczenczek.github.io/Python-w-Malinach/post/red-switch/</link>
+      <pubDate>Sat, 11 Nov 2017 14:49:17 +0100</pubDate>
+      
+      <guid>https://kczenczek.github.io/Python-w-Malinach/post/red-switch/</guid>
+      <description>Lord of the Red switch Ostatnio omówiłam i przetestowałam sposób komunikowanie się Malinką za pomocą GPIO output, poprzez zaprogramowaną przez nas sekwencję zapalania się i gaśnięcia dwóch diod LED, rzecz jasna czerwonych ;)
+Tym razem spróbuję wywołać zdarzenie w naszym, zewnętrznym świecie i zobaczymy jak na to zareaguje Malinka. Podepnę nic innego jak zwykły przełącznik chwilowy ON-OFF, koloru&amp;hellip; czerwonego :)
+Czego potrzebuję?
+ 1 x płytka stykowa 1 x przełącznik chwilowy ON-OFF 2 x rezystor - jeden rezystor 10k Om oraz drugi wystarczy 1k Om.</description>
+    </item>
     
     <item>
       <title>Niech stanie się Jasność</title>
