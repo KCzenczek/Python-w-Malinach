@@ -30,7 +30,7 @@ canonifyURLs = true
 
 	# Navigation links
 	home = ""
-	subscribe = ""
+	# subscribe = ""
 	# Pagination links
 	olderPosts = ""
 	newerPosts = ""
