@@ -18,7 +18,10 @@
       <pubDate>Wed, 13 Dec 2017 11:23:32 +0100</pubDate>
       
       <guid>https://kczenczek.github.io/Python-w-Malinach/post/2-w-1/</guid>
-      <description>Output + Input Comming soon</description>
+      <description>Output + Input Mam już za sobą jeden projekt, w którym poprzez GPIO output steruję zapalaniem i gaszeniem diody LED. W drugim zaś projekcie, przekazuję informację do Malinki za pomocą przełącznika ON-OFF, poprzez ustawienie PINu na GPIO input.
+Pytanie: Czy można w jednym programie użyć jednocześnie ustawienia GPIO na output i input ? Odpowiedź: Otóż, można :)
+Co może się przydać?
+ 1 x płytka stykowa 2 x dioda LED - najlepiej dwa różne kolory np.</description>
     </item>
     
     <item>

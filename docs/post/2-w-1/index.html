@@ -22,7 +22,10 @@
 
 
 <meta property="og:title" content="2 W 1" />
-<meta property="og:description" content="Output &#43; Input Comming soon" />
+<meta property="og:description" content="Output &#43; Input Mam już za sobą jeden projekt, w którym poprzez GPIO output steruję zapalaniem i gaszeniem diody LED. W drugim zaś projekcie, przekazuję informację do Malinki za pomocą przełącznika ON-OFF, poprzez ustawienie PINu na GPIO input.
+Pytanie: Czy można w jednym programie użyć jednocześnie ustawienia GPIO na output i input ? Odpowiedź: Otóż, można :)
+Co może się przydać?
+ 1 x płytka stykowa 2 x dioda LED - najlepiej dwa różne kolory np." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kczenczek.github.io/Python-w-Malinach/post/2-w-1/" />
 
@@ -44,18 +47,24 @@
 
 
 <meta itemprop="name" content="2 W 1">
-<meta itemprop="description" content="Output &#43; Input Comming soon">
+<meta itemprop="description" content="Output &#43; Input Mam już za sobą jeden projekt, w którym poprzez GPIO output steruję zapalaniem i gaszeniem diody LED. W drugim zaś projekcie, przekazuję informację do Malinki za pomocą przełącznika ON-OFF, poprzez ustawienie PINu na GPIO input.
+Pytanie: Czy można w jednym programie użyć jednocześnie ustawienia GPIO na output i input ? Odpowiedź: Otóż, można :)
+Co może się przydać?
+ 1 x płytka stykowa 2 x dioda LED - najlepiej dwa różne kolory np.">
 
 
 <meta itemprop="dateModified" content="2017-12-13T11:23:32&#43;01:00" />
-<meta itemprop="wordCount" content="5">
+<meta itemprop="wordCount" content="446">
 
 
 
 <meta itemprop="keywords" content="" />
 
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="2 W 1"/>
-<meta name="twitter:description" content="Output &#43; Input Comming soon"/>
+<meta name="twitter:description" content="Output &#43; Input Mam już za sobą jeden projekt, w którym poprzez GPIO output steruję zapalaniem i gaszeniem diody LED. W drugim zaś projekcie, przekazuję informację do Malinki za pomocą przełącznika ON-OFF, poprzez ustawienie PINu na GPIO input.
+Pytanie: Czy można w jednym programie użyć jednocześnie ustawienia GPIO na output i input ? Odpowiedź: Otóż, można :)
+Co może się przydać?
+ 1 x płytka stykowa 2 x dioda LED - najlepiej dwa różne kolory np."/>
 
 
     </head>
@@ -92,7 +101,45 @@
 
 <h1 id="output-input">Output + Input</h1>
 
-<p>Comming soon</p>
+<p>Mam już za sobą jeden projekt, w którym poprzez GPIO output steruję zapalaniem i gaszeniem diody LED. W drugim zaś projekcie, przekazuję informację do Malinki za pomocą przełącznika ON-OFF, poprzez ustawienie PINu na GPIO input.</p>
+
+<p>Pytanie: Czy można w jednym programie użyć jednocześnie ustawienia GPIO na output i input ? Odpowiedź: Otóż, można :)</p>
+
+<p><strong>Co może się przydać?</strong></p>
+
+<ul>
+<li>1 x płytka stykowa</li>
+<li>2 x dioda LED - najlepiej dwa różne kolory np. poza &ldquo;wszędobylską&rdquo; czerwoną, może być zielona</li>
+<li>2 x rezystor - dla każdej z diod np. wcześniej już wykorzystywany 470 Om.</li>
+<li>1 x czujnik ruchu PIR - czyli ang. <a href="https://botland.com.pl/czujniki-ruchu/1655-czujnik-ruchu-pir-hc-sr501-zielony.html">Passive Infra Red</a> - pasywny czujnik podczerwieni.
+Rzecz jasna można też użyć przełącznika chwilowego ON-OFF z poprzedniego postu. Niemniej jednak przyjęłam zasadę, że z każdym postem będę na mawiała do próbowania i testowania czegoś nowego, oczywiście w miarę potrzeb i możliwości :)</li>
+<li>4 x kabelki męsko-żeńskie</li>
+<li>2 x kabelki żeńsko-żeńskie</li>
+</ul>
+
+<p><strong>Schemat podpięcia przedstawia się następująco:</strong></p>
+
+<p><img src="https://kczenczek.github.io/Python-w-Malinach/img/connection_2_LED_PIR.png" alt="schemat" /></p>
+
+<p>PIN 6, czyli uziemienie (GND) czarnym kabelkiem wpinam w płytkę stykową w drugim rzędzie (czyli “-”), co oznacza, że od teraz w całym tym rzędzie jest GND.</p>
+
+<p>W dowolne wejście drugiego rzędu wpinam jedną nóżkę rezystora, a drugą w wejście np. a4. W tym samym tj. 4 wierszu wpinam KRÓTSZĄ nóżkę diody czerwonej np. d4, a dłuższą w sąsiednim wierszu np. d3.</p>
+
+<p>Drugim kabelkiem (różowym) zamykam obwód czerwonej diody, czyli jedną końcówkę wpinam w a3 na płytce, a drugi koniec w PIN 10 czyli GPIO 15 (na schemacie opisana w skrócie GP15). Wprawdzie w poprzednich postach pisałam, aby w pierwszej kolejności do podpięcia tzw. zwykłych elementów (np. diody) wybierać PIN-y zielone (czyli PIN-y zwykłe). W tym poście chciałam jednak pokazać, iż tak naprawdę nic złego się nie stanie, dioda po prostu zapali się zgodnie z sekwencją w kodzie.</p>
+
+<p>Analogicznie podpinam diodę zieloną zaczynając od rzędu z uziemieniem, a kończąc niebieskim kabelkiem w GP17.</p>
+
+<p>Jak widać został jeszcze czujnik PIR, mający trzy kabelki wyjściowej. Czarny, czyli uziemienie wpinamy w dowolne wejście w drugim rzędzie na płytce stykowej – w ten sposób czujnik jest uziemiony. Żółtym kabelkiem przesyłany jest sygnał, więc podpinamy go do Malinki, np. do PINu 7, czyli GP04. Z kolei kabelek czerwony podpinamy do PIN-u 2, czyli o napięciu 5V, tym samym zapewniając zasilanie czujnika.</p>
+
+<p><strong>Szczypta kodu</strong></p>
+
+<p>[Link do kodu] ()</p>
+
+<p>Uruchomić możemy tak jak do tej pory, czyli po zapisaniu pliku odpalamy F5.</p>
+
+<p>Możemy podnieść poprzeczkę i uruchomić z terminala wpisując <code>$ sudo python nazwa_pliku.py</code></p>
+
+<p>O czym należy pamiętać? Aby terminal był otworzony w miejscu w którym znajduje się nasz plik, np. jeśli plik jest zapisany na pulpicie, to w terminalu powinna pojawić się następująca ścieżka dostępu: <code>pi@raspberrypi:~/Pulpit$</code> i teraz piszemy komendę <code>$ sudo python nazwa_pliku.py</code></p>
 
     </section>
 </article>
