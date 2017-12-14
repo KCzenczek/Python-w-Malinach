@@ -9,14 +9,14 @@ Ostatnio omówiłam i przetestowałam sposób komunikowanie się Malinką za pom
 
 Tym razem spróbuję wywołać zdarzenie w naszym, zewnętrznym świecie i zobaczymy jak na to zareaguje Malinka. Podepnę nic innego jak zwykły przełącznik chwilowy ON-OFF, koloru... czerwonego :)
 
-Czego potrzebuję?
+<strong>Czego potrzebuję?</strong>
 
 - 1 x płytka stykowa
 - 1 x przełącznik chwilowy ON-OFF
 - 2 x rezystor - jeden rezystor 10k Om oraz drugi wystarczy 1k Om. (Aczkolwiek, w moich zasobach był jedynie 1,2k Om. Też zadziałał, później wyjaśnię dlaczego i jak)
 - 3 x kabelek męsko-żeński
 
-Schemat podpięcia jest następujący:
+<strong>Schemat podpięcia jest następujący:</strong>
 
 ![schemat](/img/connection_switch.png)
 
@@ -29,7 +29,7 @@ Teraz krótkie wyjaśnienie, o co chodzi z rezystorem obniżającym - otóż PIN
 Wracając jednak do naszego schematu z rezystorem obniżającym wygląda to tak, w momencie 'nie-naciśnięcia' przycisku obwód jest uziemiony, w momencie naciśnięcia, przechodzi w stan wysoki (zaczyna płynąć prąd). 
 O tej właśnie zmianie (tzn. o przyciśnięciu guzika) informujemy Malinkę za pomocą PIN 16, a programem sterujemy co wówczas ma się zadziać.
  
-Trochę kodu
+<strong>Trochę kodu</strong>
 
 [Link do kodu] (https://github.com/KCzenczek/RPi-code/blob/master/Sensors_and_switches/switch.py)
 
@@ -39,6 +39,6 @@ Na ekranie mamy wyświetlajęcy się pierwszy komunikat. Po wciśnięciu guzika,
 Ponieważ zastosowaliśmy pętlę while True bez ograniczenia, kod będzie działał dopóki nie włączymy Ctrl + C. 
 
 
-Dla zaciekawionych: 
+Dla zaciekawionych:<br>
 No dobrze był stan niski oraz stan wysoki. A czy może być 'nijaki'? Otóż tak :) Z tym, że nazywa się troszkę inaczej. W ang. jest na to określenie 'floating', po polsku możemy opisać ten stan jako PIN niepodpięty, czyli nie możemy jednoznacznie określić jego logicznej wartości 0 czy 1. Chociaż nie polecam takich zabaw, to żeby osiągnąć ‘floating’ trzeba podpiąć PIN 16 - przełącznik ON-OFF - 3.3V, czyli bez GND.
 Podczas przygotowania tego materiału przypadkiem udało mi się osiągnąć, ten stan gdyż mając wszystko podpięte zgodnie z naszym schematem (co ważne miałam podpięte rezystory!!!) nie zauważyłam, że PIN GND wysunął mi się z Malinki - łobuz wyskoczył z gniazda. A co na to Python? Szalał pokazując na zmianę komunikaty z printów, bez mojego współudziału w postaci naciskania guzika, oczywiście czerwonego… 😊.

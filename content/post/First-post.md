@@ -9,7 +9,7 @@ Chciałam rozpocząć od opisania prostego podpięcia diody LED, ale gdy zaczę�
 
 Tak więc:
 
-1. Wybór Malinki i nie tylko
+<strong>Wybór Malinki i nie tylko</strong>
 
 Tak jak wspomniałam, moją przygodę z Malinką zaczynam na Raspberry Pi Zero, ponieważ na dzień dobry nie potrzebuję dużej mocy. Jej mały procesor, mała prądożerność i małe gabaryty powodują, że będzie idealna do moich pierwszych małych projektów.
 
@@ -38,7 +38,7 @@ Mój podstawowy zestaw do pracy:
 
 Ciekawostka: Do testowania niektórych projektów na dwie Malinki wystarczy jeden zasilacz. Magia? Otóż nie, okazało się bowiem, że w niektórych przypadkach wystarczy Malinkę po prostu zasilić Power Bankiem :)  
 
-2. Karta micro SD (+ adapter do karty)
+<strong>Karta micro SD (+ adapter do karty)</strong>
 
 Do wyboru do koloru, serio.
 
@@ -46,7 +46,7 @@ Ponieważ wiedziałam, że czeka mnie zabawa z osadzeniem Rasbiana i jak znam si
 
 Jeden adapter w zupełności wystarczy, nawet gdy się będzie miało wiele kart dla kilku Malinek bądź wszystkie karty z różnymi projektami dla jednej Malinki - trochę relacjami bazodanowymi poleciało :)
 
-3. System operacyjny
+<strong>System operacyjny</strong>
 
 Generalnie, na stronie [Fundacji Raspberry] (https://www.raspberrypi.org/downloads/) znajdują się dwa systemy operacyjne. 
 
@@ -55,17 +55,16 @@ dlatego polecam albo [oryginał] (https://www.raspberrypi.org/documentation/inst
 
 Zdradzając jak to wyglądało u mnie, w skrócie:
 
-1. Ściągnełam [Raspbiana] (https://www.raspberrypi.org/downloads/raspbian/).
-2. Potem ściągnełam i zainstalowałam [Etchera] (https://etcher.io/) (do zapisywania zdjęć na karcie SD). 
-2. Wsadziłam micro SD do adaptera, a to wszystko do laptopa.
-3. Odpaliłam Etchera i zgodnie z pojawiającymi się trzema komunikatami zrobiłam 'flasha' Raspbiana na micro SD.
+- Ściągnełam [Raspbiana] (https://www.raspberrypi.org/downloads/raspbian/).
+- Potem ściągnełam i zainstalowałam [Etchera] (https://etcher.io/) (do zapisywania zdjęć na karcie SD). 
+- Wsadziłam micro SD do adaptera, a to wszystko do laptopa.
+- Odpaliłam Etchera i zgodnie z pojawiającymi się trzema komunikatami zrobiłam 'flasha' Raspbiana na micro SD.
 
-Koniec 
- 
+Koniec.<br>
 Obie moje Malinki działają na Raspbianie i nie mam żadnych zastrzeżeń.
 
 
-4. Odpalamy Malinkę
+<strong>Odpalamy Malinkę</strong>
 
 Przede wszystkim zwróćcie uwagę, że Malinki nie mają On/Off, czyli włączenie następuje poprzez zwykłe podpięcie do źródła prądu, czy to gniazdko czy też Power Bank.
 

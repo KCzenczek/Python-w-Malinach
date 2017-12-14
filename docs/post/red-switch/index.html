@@ -105,7 +105,7 @@ Czego potrzebuję?
 
 <p>Tym razem spróbuję wywołać zdarzenie w naszym, zewnętrznym świecie i zobaczymy jak na to zareaguje Malinka. Podepnę nic innego jak zwykły przełącznik chwilowy ON-OFF, koloru&hellip; czerwonego :)</p>
 
-<p>Czego potrzebuję?</p>
+<p><strong>Czego potrzebuję?</strong></p>
 
 <ul>
 <li>1 x płytka stykowa</li>
@@ -114,7 +114,7 @@ Czego potrzebuję?
 <li>3 x kabelek męsko-żeński</li>
 </ul>
 
-<p>Schemat podpięcia jest następujący:</p>
+<p><strong>Schemat podpięcia jest następujący:</strong></p>
 
 <p><img src="https://kczenczek.github.io/Python-w-Malinach/img/connection_switch.png" alt="schemat" /></p>
 
@@ -127,7 +127,7 @@ Teraz krótkie wyjaśnienie, o co chodzi z rezystorem obniżającym - otóż PIN
 <p>Wracając jednak do naszego schematu z rezystorem obniżającym wygląda to tak, w momencie &lsquo;nie-naciśnięcia&rsquo; przycisku obwód jest uziemiony, w momencie naciśnięcia, przechodzi w stan wysoki (zaczyna płynąć prąd).
 O tej właśnie zmianie (tzn. o przyciśnięciu guzika) informujemy Malinkę za pomocą PIN 16, a programem sterujemy co wówczas ma się zadziać.</p>
 
-<p>Trochę kodu</p>
+<p><strong>Trochę kodu</strong></p>
 
 <p><a href="https://github.com/KCzenczek/RPi-code/blob/master/Sensors_and_switches/switch.py">Link do kodu</a></p>
 
@@ -136,7 +136,7 @@ O tej właśnie zmianie (tzn. o przyciśnięciu guzika) informujemy Malinkę za 
 <p>Na ekranie mamy wyświetlajęcy się pierwszy komunikat. Po wciśnięciu guzika, komunikat zmienia się na drugi. Ile razy możemy wcisnąć guzik? Tyle razy na ile mamy ochotę :)
 Ponieważ zastosowaliśmy pętlę while True bez ograniczenia, kod będzie działał dopóki nie włączymy Ctrl + C.</p>
 
-<p>Dla zaciekawionych:
+<p>Dla zaciekawionych:<br>
 No dobrze był stan niski oraz stan wysoki. A czy może być &lsquo;nijaki&rsquo;? Otóż tak :) Z tym, że nazywa się troszkę inaczej. W ang. jest na to określenie &lsquo;floating&rsquo;, po polsku możemy opisać ten stan jako PIN niepodpięty, czyli nie możemy jednoznacznie określić jego logicznej wartości 0 czy 1. Chociaż nie polecam takich zabaw, to żeby osiągnąć ‘floating’ trzeba podpiąć PIN 16 - przełącznik ON-OFF - 3.3V, czyli bez GND.
 Podczas przygotowania tego materiału przypadkiem udało mi się osiągnąć, ten stan gdyż mając wszystko podpięte zgodnie z naszym schematem (co ważne miałam podpięte rezystory!!!) nie zauważyłam, że PIN GND wysunął mi się z Malinki - łobuz wyskoczył z gniazda. A co na to Python? Szalał pokazując na zmianę komunikaty z printów, bez mojego współudziału w postaci naciskania guzika, oczywiście czerwonego… 😊.</p>
 
