@@ -54,7 +54,7 @@ Co może się przydać?
 
 
 <meta itemprop="dateModified" content="2017-12-13T11:23:32&#43;01:00" />
-<meta itemprop="wordCount" content="446">
+<meta itemprop="wordCount" content="448">
 
 
 
@@ -127,13 +127,13 @@ Rzecz jasna można też użyć przełącznika chwilowego ON-OFF z poprzedniego p
 
 <p>Drugim kabelkiem (różowym) zamykam obwód czerwonej diody, czyli jedną końcówkę wpinam w a3 na płytce, a drugi koniec w PIN 10 czyli GPIO 15 (na schemacie opisana w skrócie GP15). Wprawdzie w poprzednich postach pisałam, aby w pierwszej kolejności do podpięcia tzw. zwykłych elementów (np. diody) wybierać PIN-y zielone (czyli PIN-y zwykłe). W tym poście chciałam jednak pokazać, iż tak naprawdę nic złego się nie stanie, dioda po prostu zapali się zgodnie z sekwencją w kodzie.</p>
 
-<p>Analogicznie podpinam diodę zieloną zaczynając od rzędu z uziemieniem, a kończąc niebieskim kabelkiem w GP17.</p>
+<p>Analogicznie podpinam diodę zieloną zaczynając od rzędu z uziemieniem, a kończąc niebieskim kabelkiem w GP17, czyli PIN-ie 11.</p>
 
 <p>Jak widać został jeszcze czujnik PIR, mający trzy kabelki wyjściowej. Czarny, czyli uziemienie wpinamy w dowolne wejście w drugim rzędzie na płytce stykowej – w ten sposób czujnik jest uziemiony. Żółtym kabelkiem przesyłany jest sygnał, więc podpinamy go do Malinki, np. do PINu 7, czyli GP04. Z kolei kabelek czerwony podpinamy do PIN-u 2, czyli o napięciu 5V, tym samym zapewniając zasilanie czujnika.</p>
 
 <p><strong>Szczypta kodu</strong></p>
 
-<p>[Link do kodu] ()</p>
+<p><a href="https://github.com/KCzenczek/RPi-code/blob/master/Sensors_and_switches/PIR_sensor_2LEDs.py">Link do kodu</a></p>
 
 <p>Uruchomić możemy tak jak do tej pory, czyli po zapisaniu pliku odpalamy F5.</p>
 
