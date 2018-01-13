@@ -76,6 +76,6 @@ Piszę o tym wszystkim bo jak się okazało u mnie problem był nie z pierwszym,
 
 Tak, zamykanie Malinki bywa triki, zwłaszcza gdy się ma nieprzeźroczystą obudowę i ciężko jest dostrzec migające w Malince na zielono małe światełko. Wszystko wskazuje na to, że za wcześnie wyjęłam wtyczkę z gniazda i uszkodziłam kartę SD. I właśnie w tym momencie z ratunkiem przyszła druga karta :)
 
-Od tego czasu obie Malinki mają przeźroczystą obudowę, a po kliknięciu w 'Shotdown', nie spuszczam oka z zielonego światełka. Dopiero jak przestanie do mnie mrugać (plus dodatkowe 5 sekund dla pewności) wyciągam wtyczkę.
+Od tego czasu obie Malinki mają przeźroczystą obudowę, a po kliknięciu w 'Shutdown', nie spuszczam oka z zielonego światełka. Dopiero jak przestanie do mnie mrugać (plus dodatkowe 5 sekund dla pewności) wyciągam wtyczkę.
 
 
