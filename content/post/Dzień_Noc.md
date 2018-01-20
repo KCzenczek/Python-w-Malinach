@@ -3,7 +3,7 @@ title: "Dzień_Noc"
 date: 2018-01-13T20:00:30+01:00
 ---
 
-# Czy ktoś widział kotecka? - zapytał Tweety
+# 'Czy ktoś widział kotecka?' - zapytał Tweety
 
 Kolejny projekt chciałam aby był z gatunku praktycznych, lub prawie praktycznych. Wyobraźmy sobie, jest noc i coś się kręci pod oknami. Co zrobić? Najlepiej zaświecić światło i sprawdzić. 
 
@@ -13,6 +13,7 @@ Można też zaopatrzeć się w lampę z czujnikiem ruchu, tzw. 'fotokomórka' lu
 
 Dla większej przejrzystości podzielę sobie wszystkie elementy na dwa 'zespoły' czujników:
 <b>Czujnik PIR</b> - czyli wszystko to, z czego korzytałam w ostatnim projekcie:
+
 - 1 x płytka stykowa
 - 2 x dioda LED - zielona i oczywiście czerwona
 - 2 x rezystor - dla każdej z diod np. wcześniej już wykorzystywany 470 Om.
@@ -21,6 +22,7 @@ Dla większej przejrzystości podzielę sobie wszystkie elementy na dwa 'zespoł
 - 2 x kabelki żeńsko-żeńskie
 
 <b>Czujnik 'odbiciowy' IR</b> - czyli ang. [Reflective IR Sensor] (https://www.adafruit.com/product/2349); więcej info w wersji [PL] (https://botland.com.pl/transoptory-odbiciowe/52-czujnik-transoptor-odbiciowy-cny70.html)
+
 - 2 x dioda LED - raz jeszcze zielona i oczywiście czerwona
 - 3 x rezystor 470 Om - dwa dla dwóch diod LED + jeden dla czujnika IR, a w zasadzie dla diody tam się znajdującej
 - 1 x rezystor 10 kOm
@@ -32,7 +34,7 @@ Dla większej przejrzystości podzielę sobie wszystkie elementy na dwa 'zespoł
 
 <strong>Schemat podpięcia przedstawia się następująco:</strong>
 
-![schemat](/img/connection_IR_PIR_LEDs.png)
+![schemat](/img/connection_IR_PIR_LEDs.jpg)
 
 <strong>Kod</strong>
 
