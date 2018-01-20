@@ -12,6 +12,7 @@ Można też zaopatrzeć się w lampę z czujnikiem ruchu, tzw. 'fotokomórka' lu
 <strong>Co się przyda?</strong>
 
 Dla większej przejrzystości podzielę sobie wszystkie elementy na dwa 'zespoły' czujników:
+
 <b>Czujnik PIR</b> - czyli wszystko to, z czego korzytałam w ostatnim projekcie:
 
 - 1 x płytka stykowa
