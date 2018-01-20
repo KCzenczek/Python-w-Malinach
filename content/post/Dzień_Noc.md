@@ -12,7 +12,7 @@ Można też zaopatrzeć się w lampę z czujnikiem ruchu, tzw. 'fotokomórka' lu
 <strong>Co się przyda?</strong>
 
 Dla większej przejrzystości podzielę sobie wszystkie elementy na dwa 'zespoły' czujników:
-1. <b>Czujnik PIR</b> - czyli wszystko to, z czego korzytałam w ostatnim projekcie:
+<b>Czujnik PIR</b> - czyli wszystko to, z czego korzytałam w ostatnim projekcie:
 - 1 x płytka stykowa
 - 2 x dioda LED - zielona i oczywiście czerwona
 - 2 x rezystor - dla każdej z diod np. wcześniej już wykorzystywany 470 Om.
@@ -20,7 +20,7 @@ Dla większej przejrzystości podzielę sobie wszystkie elementy na dwa 'zespoł
 - 4 x kabelki męsko-żeńskie
 - 2 x kabelki żeńsko-żeńskie
 
-2. <b>Czujnik 'odbiciowy' IR</b> - czyli ang. [Reflective IR Sensor] (https://www.adafruit.com/product/2349); więcej info w wersji [PL] (https://botland.com.pl/transoptory-odbiciowe/52-czujnik-transoptor-odbiciowy-cny70.html)
+<b>Czujnik 'odbiciowy' IR</b> - czyli ang. [Reflective IR Sensor] (https://www.adafruit.com/product/2349); więcej info w wersji [PL] (https://botland.com.pl/transoptory-odbiciowe/52-czujnik-transoptor-odbiciowy-cny70.html)
 - 2 x dioda LED - raz jeszcze zielona i oczywiście czerwona
 - 3 x rezystor 470 Om - dwa dla dwóch diod LED + jeden dla czujnika IR, a w zasadzie dla diody tam się znajdującej
 - 1 x rezystor 10 kOm
