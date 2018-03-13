@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kczenczek.github.io/Python-w-Malinach/post/keep-rolling/</loc>
+    <lastmod>2018-03-13T21:19:31+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kczenczek.github.io/Python-w-Malinach/post/dzie%C5%84_noc/</loc>
     <lastmod>2018-01-13T20:00:30+01:00</lastmod>
   </url>
@@ -39,13 +44,13 @@
   
   <url>
     <loc>https://kczenczek.github.io/Python-w-Malinach/post/</loc>
-    <lastmod>2018-01-13T20:00:30+01:00</lastmod>
+    <lastmod>2018-03-13T21:19:31+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://kczenczek.github.io/Python-w-Malinach/</loc>
-    <lastmod>2018-01-13T20:00:30+01:00</lastmod>
+    <lastmod>2018-03-13T21:19:31+01:00</lastmod>
     <priority>0</priority>
   </url>
   
