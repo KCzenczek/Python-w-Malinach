@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](//gohugo.io). Theme by [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme).</copyright>
-    <lastBuildDate>Tue, 13 Mar 2018 21:19:31 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jan 2019 18:26:19 +0100</lastBuildDate>
     
 	<atom:link href="https://kczenczek.github.io/Python-w-Malinach/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Button&#43;Camera</title>
+      <link>https://kczenczek.github.io/Python-w-Malinach/post/button&#43;camera/</link>
+      <pubDate>Sun, 13 Jan 2019 18:26:19 +0100</pubDate>
+      
+      <guid>https://kczenczek.github.io/Python-w-Malinach/post/button&#43;camera/</guid>
+      <description>Press the button and &amp;lsquo;say cheese&amp;rsquo; A co gdybyśmy chcieli zrobić zdjęcie osobie, która odwiedza nas kiedy nie ma nas w domu, uparcie dzwoniąc do drzwi? Z rozwiązaniem może przyjśc Malinka. Poniżej opiszę jak możemy zaiprowizować rozwiązanie. Wyobraźmy sobie, że nasz dzwonek to nic innego jak zwykły przełącznik ON-OFF, najlepiej ten czerwony ;) Do tego będziemy jeszcze potrzebować kamery. W ninijeszym poście nie podejmuję się opisywania instalacji rozwiązania w &amp;lsquo;ścianie&amp;rsquo;.</description>
+    </item>
     
     <item>
       <title>Keep Rolling</title>
