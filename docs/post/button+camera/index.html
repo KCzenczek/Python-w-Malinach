@@ -48,7 +48,7 @@
 
 
 <meta itemprop="dateModified" content="2019-01-13T18:26:19&#43;01:00" />
-<meta itemprop="wordCount" content="353">
+<meta itemprop="wordCount" content="354">
 
 
 
@@ -99,7 +99,7 @@ W ninijeszym poście nie podejmuję się opisywania instalacji rozwiązania w &l
 <p><strong>Czego potrzebuję?</strong></p>
 
 <ul>
-<li><a href="https://kczenczek.github.io/Python-w-Malinach/post/red-switch/">To co jest potrzebne tu</a></li>
+<li><a href="https://kczenczek.github.io/Python-w-Malinach/post/red-switch/">Wszystko z posta Red Switch</a></li>
 <li>kamerka RPi - dla przykładu <a href="https://botland.com.pl/pl/kamery-dla-raspberry-pi-i-akcesoria/6124-raspberry-pi-camera-hd-v2-8mpx-oryginalna-kamera-dla-raspberry-pi-6405227108814.html">Raspberry Pi Camera</a></li>
 </ul>
 
@@ -115,7 +115,7 @@ I dobra rada uważajcie na delikatne, czarne &lsquo;mocowanie&rsquo; kamerki prz
 
 <p><a href="https://github.com/KCzenczek/RPi-code/blob/master/Camera/photo.sh">Link do kodu - bash</a></p>
 
-<p>Kilka słów o pliku .sh Jest to skrytp bashowy, który będzie wywowływany jako subproces w naszych głównym pliku pythonowym. Za pomocą komendy <code>raspistill -o photo_name.jpg</code> robione jest zdjęcie. Dla przetestowania działania samej kamery możemy ją wpisać w terminalu. Możemy również podać dokładne miejsce zapisywania zdjęć, podając pełną ścieżkę np. <code>/home/pi/Desctop/projects/photo.jpg</code>. Jeśli chodzi o parametry <code>-vf</code> oraz <code></code> są opcjonalne. Oznaczają vertical flip (obrót pionowy) i horizontal flip (obrót poziomy) i zależą wyłącznie od fizycznego ustawienia kamerki.
+<p>Kilka słów o pliku .sh Jest to skrytp bashowy, który będzie wywowływany jako subproces w naszych głównym pliku pythonowym. Za pomocą komendy <code>raspistill -o photo_name.jpg</code> robione jest zdjęcie. Dla przetestowania działania samej kamery możemy ją wpisać w terminalu. Możemy również podać dokładne miejsce zapisywania zdjęć, podając pełną ścieżkę np. <code>/home/pi/Desctop/projects/photo.jpg</code>. Jeśli chodzi o parametry <code>-vf</code> oraz <code>-hf</code> są opcjonalne. Oznaczają vertical flip (obrót pionowy) i horizontal flip (obrót poziomy) i zależą wyłącznie od fizycznego ustawienia kamerki.
 Ponieważ każde zdjęcie będzie miało w nazwie datę i czas tzw.timestamp, o ile w ciągu tej samej minuty nie będziemy chcieli zrobić więcej niż jendnego zdjęcia (pliki zostaną nadpisane - w skrócie starsze zostanie zastąpione nowszym), każde zdjęcie zostanie zapisane we wskazanym przez nas folderze na Malince.
 Jeszcze jedna ważna info. Musimy zmienić uprawnienia dla tego pliku, aby można było go uruchomić wpisując komendę <code>$ chmod +x photo.sh</code>.
 Więcej informacji o <a href="https://pl.wikipedia.org/wiki/Prawa_dost%C4%99pu">prawie dostępu</a> oraz <a href="https://pl.wikipedia.org/wiki/Chmod">poleceniu chomd</a>

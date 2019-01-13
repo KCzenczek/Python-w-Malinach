@@ -11,7 +11,7 @@ W ninijeszym poście nie podejmuję się opisywania instalacji rozwiązania w '�
 
 <strong>Czego potrzebuję?</strong>
 
-- [To co jest potrzebne tu] (https://kczenczek.github.io/Python-w-Malinach/post/red-switch/)
+- [Wszystko z posta Red Switch] (https://kczenczek.github.io/Python-w-Malinach/post/red-switch/)
 - kamerka RPi - dla przykładu [Raspberry Pi Camera] (https://botland.com.pl/pl/kamery-dla-raspberry-pi-i-akcesoria/6124-raspberry-pi-camera-hd-v2-8mpx-oryginalna-kamera-dla-raspberry-pi-6405227108814.html) 
 
 <strong>Schemat podpięcia</strong>
@@ -26,7 +26,7 @@ I dobra rada uważajcie na delikatne, czarne 'mocowanie' kamerki przy Malince. U
 
 [Link do kodu - bash] (https://github.com/KCzenczek/RPi-code/blob/master/Camera/photo.sh)
 
-Kilka słów o pliku .sh Jest to skrytp bashowy, który będzie wywowływany jako subproces w naszych głównym pliku pythonowym. Za pomocą komendy <code>raspistill -o photo_name.jpg</code> robione jest zdjęcie. Dla przetestowania działania samej kamery możemy ją wpisać w terminalu. Możemy również podać dokładne miejsce zapisywania zdjęć, podając pełną ścieżkę np. <code>/home/pi/Desctop/projects/photo.jpg</code>. Jeśli chodzi o parametry <code>-vf</code> oraz <code></code> są opcjonalne. Oznaczają vertical flip (obrót pionowy) i horizontal flip (obrót poziomy) i zależą wyłącznie od fizycznego ustawienia kamerki.
+Kilka słów o pliku .sh Jest to skrytp bashowy, który będzie wywowływany jako subproces w naszych głównym pliku pythonowym. Za pomocą komendy <code>raspistill -o photo_name.jpg</code> robione jest zdjęcie. Dla przetestowania działania samej kamery możemy ją wpisać w terminalu. Możemy również podać dokładne miejsce zapisywania zdjęć, podając pełną ścieżkę np. <code>/home/pi/Desctop/projects/photo.jpg</code>. Jeśli chodzi o parametry <code>-vf</code> oraz <code>-hf</code> są opcjonalne. Oznaczają vertical flip (obrót pionowy) i horizontal flip (obrót poziomy) i zależą wyłącznie od fizycznego ustawienia kamerki.
 Ponieważ każde zdjęcie będzie miało w nazwie datę i czas tzw.timestamp, o ile w ciągu tej samej minuty nie będziemy chcieli zrobić więcej niż jendnego zdjęcia (pliki zostaną nadpisane - w skrócie starsze zostanie zastąpione nowszym), każde zdjęcie zostanie zapisane we wskazanym przez nas folderze na Malince.
 Jeszcze jedna ważna info. Musimy zmienić uprawnienia dla tego pliku, aby można było go uruchomić wpisując komendę <code>$ chmod +x photo.sh</code>.
 Więcej informacji o [prawie dostępu] (https://pl.wikipedia.org/wiki/Prawa_dost%C4%99pu) oraz [poleceniu chomd] (https://pl.wikipedia.org/wiki/Chmod)
