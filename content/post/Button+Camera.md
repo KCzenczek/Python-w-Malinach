@@ -1,7 +1,6 @@
 ---
 title: "Button+Camera"
 date: 2019-01-13T18:26:19+01:00
-draft: true
 ---
 
 # Press the button and 'say cheese'
