@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](//gohugo.io). Theme by [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme).</copyright>
-    <lastBuildDate>Sun, 13 Jan 2019 18:26:19 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 28 Feb 2019 21:52:36 +0100</lastBuildDate>
     
 	<atom:link href="https://kczenczek.github.io/Python-w-Malinach/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Return of Red Button</title>
+      <link>https://kczenczek.github.io/Python-w-Malinach/post/return-of-red-button/</link>
+      <pubDate>Thu, 28 Feb 2019 21:52:36 +0100</pubDate>
+      
+      <guid>https://kczenczek.github.io/Python-w-Malinach/post/return-of-red-button/</guid>
+      <description> Start with off, czyli zaczynamy od końca </description>
+    </item>
     
     <item>
       <title>Button&#43;Camera</title>
