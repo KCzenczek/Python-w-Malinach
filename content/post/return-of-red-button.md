@@ -34,6 +34,4 @@ Jak wczejśniej wspomniałam, w kodzie znajdują się dwa rozwiązania, obydwa d
 Więcej info na temat zastosowanych metod z modułu RPi.GPIO [można przeczytać tu] (https://sourceforge.net/p/raspberry-gpio-python/wiki/Inputs/)
 
 
-Hint: Na początek, żeby nie katować Malinki milionem prób ON/OFF i niepotrzebną frustracją, że coś nie działą, proponuję zbudować zwykły układ dla buttona; z prostym kodem - zamiast subprocess.call można użyć opcji <code>print 'Button works!' i wywołać plik jak do tej pory z linii komendy. I na zasadzie małych kroczków, jak coś działa dodawać kolejny element.
-
-
+Hint: Na początek, żeby nie katować Malinki milionem prób ON/OFF i niepotrzebną frustracją, że coś nie działą, proponuję zbudować zwykły układ dla buttona; z prostym kodem - zamiast subprocess.call można użyć opcji <code>print 'Button works!'</code> i wywołać plik jak do tej pory z linii komendy. I na zasadzie małych kroczków, jak coś działa dodawać kolejny element.
