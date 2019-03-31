@@ -18,7 +18,7 @@
       <pubDate>Thu, 28 Feb 2019 21:52:36 +0100</pubDate>
       
       <guid>https://kczenczek.github.io/Python-w-Malinach/post/return-of-red-button/</guid>
-      <description>Start with off, czyli zaczynamy od końca Pomimo wielu zalet jakie posiada Malinka, można znaleźć jedna wadę, taką tycią. W sumie to nie należy rozważać w kategoriach wady lecz wyzwania jakie Malinka stawia przed nami :). Otóż chodzi o mały, jak to w RPi, ale całkiem przydatny przycisk a w zasadzie jego brak. Przycisk dzięki, któremu będzie można w sposób bezpieczny wyłączyć Malinkę. Teraz też można za pomocą przycisku shutdown lub komendy w terminalu sudo shutdown -h now.</description>
+      <description>Start with off, czyli zaczynamy od końca Pomimo wielu zalet jakie posiada Malinka, można znaleźć jedną wadę, taką tycią. W sumie to nie należy rozważać w kategoriach wady lecz wyzwania jakie Malinka stawia przed nami :). Otóż chodzi o mały, jak wszystko w RPi, ale całkiem przydatny guzik a w zasadzie jego brak. Zewnętrzny przycisk dzięki, któremu będzie można w sposób bezpieczny wyłączyć Malinkę. Teraz oczywiście też można zamknąć system za pomocą przycisku shutdown lub komendy w terminalu sudo shutdown -h now.</description>
     </item>
     
     <item>
