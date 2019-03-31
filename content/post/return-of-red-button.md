@@ -19,6 +19,7 @@ Jest on niemal identyczny, dla urozmaicenia zmieniamy PIN sygnału na PIN 7, czy
 
 Tak naprawdę teraz zaczyna się cała zabawa.
 
+
 Załóżmy, że mamy gotowy skrypt. Normalnie odpalamy go z lini komend. I dzieje sie to co ma się zadziać, coś zaświeci, coś sie 'wyprintuje', gdzieś pstryknie fotka itp. W tym przypadku dążymy do tego aby nasz skrypt był uruchamiany ze startem Malinki.
 W sieci możemy znaleść kilka podpowiedzi jak to zrobić. W tym [artykule] (https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/) opisanych jest pięć sposobów.
 Wybrałam opcję trzecią, czyli zamieszczenie naszego skrytpu o nazwie power_OFF w specjalnym folderze o nazwie <strong>init.d</strong>
@@ -29,6 +30,7 @@ należy umieścić w <code>/etc/init.d/</code>. Nastepnie rozszerzyć uprawnieni
 
 Jak wczejśniej wspomniałam, w kodzie znajdują się dwa rozwiązania, obydwa działają; w zależnożność które komu będzie bardziej odpowiadało.
 Więcej info na temat zastosowanych metod z modułu RPi.GPIO [TU] (https://sourceforge.net/p/raspberry-gpio-python/wiki/Inputs/)
+
 
 Hint: Na początek, żeby nie katować Malinki milionem prób ON/OFF i niepotrzebną frustracją, że coś nie działą, proponuję zbudować zwykły układ dla buttona; z prostym kodem - zamiast subprocess.call można użyć opcji print('Button works!') i wywołać plik jak do tej pory z linii komendy. I na zasadzie małych kroczków, jak coć działa dodawać kolejny element.
 
